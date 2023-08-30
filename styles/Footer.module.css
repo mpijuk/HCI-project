@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+
+}
+
+.titles {
+    font-weight: bold;
+    color: grey;
+    font-size: 24px;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.icons > * {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,28 @@
+.navTabs {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+
+.link {
+    display: flex;
+}
+
+.link li {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navTabs .link li:hover {
+    background-color: #7d7d7d;
+}
+
+.navTabs .link li.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
