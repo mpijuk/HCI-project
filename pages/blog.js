@@ -1,7 +1,7 @@
-const Home = () => {
+const Blog = () => {
     return (
         <p>This is blog</p>
     );
 };
 
-export default Home;
+export default Blog;

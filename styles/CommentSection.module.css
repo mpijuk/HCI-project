@@ -1,0 +1,17 @@
+.commentSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.commentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+

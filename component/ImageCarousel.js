@@ -17,8 +17,6 @@ const ImageCarousel = ({images}) => {
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                infinite: true,
-                dots: true
               }
             },
             {
@@ -39,13 +37,16 @@ const ImageCarousel = ({images}) => {
     };
 
     return (
-        <Slider {...settings}>
-            {images.map((item) => 
+        <div  style={{width: "100%"}}>
+            <Slider {...settings} style={{padding: "20px"}}>
+                {images.map((item) => 
                     <div key={item.id}>
-                        <Image src={`http://127.0.0.1:8090/api/files/${item.collectionId}/${item.id}/${item.path}`} alt={item.id}  width="400" height="300" style={{objectFit: "cover"}} priority={true}></Image>
+                        <Image src={`http://127.0.0.1:8090/api/files/${item.collectionId}/${item.id}/${item.path}`} alt={item.id}  width="440" height="300" style={{objectFit: "cover"}} priority={true}></Image>
                     </div>       
             )}
-        </Slider>
+            </Slider>
+        </div>
+        
     );
 }
 

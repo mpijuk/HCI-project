@@ -1,18 +1,10 @@
-import PocketBase from 'pocketbase';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import ImageCarousel from '../component/ImageCarousel';
+import homePageImg from '../public/img/homepage.jpg';
+import styles from '../styles/Home.module.css';
+import CommentSection from '../component/CommentSection';
 
-/* const pb = new PocketBase('http://127.0.0.1:8090');
-
-async function getRecords() {
-    const records = await pb.collection("images").getFullList({
-        fields: "id,name, url"
-    }); 
-    const rest = await fetch("http://127.0.0.1:8090/api/collections/images/records")
-    console.log(records);
-    return records;
-}; */
 
 const Home = () => {
 
@@ -41,10 +33,18 @@ const Home = () => {
 
     return (
         <div>
-        {/* {galleryImages.map((item) => {
-                console.log(item);
-                return <Image src={`http://127.0.0.1:8090/api/files/${item.collectionId}/${item.id}/${item.path}`} alt={item.id} key={item.id} width="150" height="150" ></Image>;
-        })} */}
+            <div className={styles.homepageImageContainer} >
+                <Image src={homePageImg} alt="" style={{objectFit:"cover"}} fill={true} priority={true}/>
+                <div className={styles.overlayText}>
+                    <p className={styles.text}>Made by Croatians.</p>
+                    <p className={styles.text}>Enjoyed by Everyone.</p>
+                </div>
+            </div>
+            <p className={styles.title}>Top offers:</p>
+            <ImageCarousel images={topofferImages} />
+            <p className={styles.title}>Blog: </p>
+            <CommentSection />
+            <p className={styles.title}>Restaurant gallery: </p>
             <ImageCarousel images={galleryImages}/>
         </div>
     );
