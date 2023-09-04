@@ -1,0 +1,42 @@
+.blogSlugContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 200px;
+    margin-top: 40px;
+}
+
+.imageTitleContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: groove;
+    border-color: white;
+}
+
+
+.imageTitleContainer h1 {
+    color: rgba(112, 144, 139, 1);
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.descriptionContainer p {
+    color: white;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+    .BlogSlugContainer {
+        padding: 0px 50px;
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+}
