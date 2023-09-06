@@ -29,9 +29,26 @@
     gap: 20px;
 }
 
-.icons > * {
-    width: 30px;
+.icon{
+    width: 35px;
     height: auto;
     cursor: pointer;
     color: white;
+}
+
+.cartIconWrapper {
+    position: relative;
+}
+
+.cartCount {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px 9px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(209, 38, 38);
+    transform: translate(50%, -50%);
 }

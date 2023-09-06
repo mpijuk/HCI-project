@@ -9,7 +9,6 @@ export default function Home() {
         <meta name="description" content="Delicious and homemade meals in Split" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      homepage
     </div>
   )
 }
