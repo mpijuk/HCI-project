@@ -1,7 +1,7 @@
 import CartContext from "../component/CartContext";
 import { useContext } from "react";
 import Image from "next/image";
-import { FaTrash } from "react-icons/Fa";
+import { FaTrash } from "react-icons/fa";
 import styles from "../styles/Cart.module.css";
 import Link from "next/link";
 

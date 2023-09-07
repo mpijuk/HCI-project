@@ -1,4 +1,4 @@
-import {FaStar} from "react-icons/Fa";
+import {FaStar} from "react-icons/fa";
 import styles from "../styles/CommentSection.module.css";
 import quote from "../public/img/quote.jpg";
 import Image from "next/image";

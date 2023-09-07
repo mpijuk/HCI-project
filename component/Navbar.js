@@ -2,7 +2,7 @@ import { navigationItems } from '../constants/navItems';
 import { useRouter } from 'next/router';
 import styles from "../styles/Navbar.module.css";
 import Link from 'next/link';
-import { RiHome2Fill, RiInformationFill, RiRestaurant2Fill, RiNewspaperFill } from "react-icons/Ri";
+import { RiHome2Fill, RiInformationFill, RiRestaurant2Fill, RiNewspaperFill } from "react-icons/ri";
 
 const Navbar = () => {
     const router = useRouter();
