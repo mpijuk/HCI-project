@@ -1,0 +1,131 @@
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+}
+
+.cartItem {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: solid white;
+    gap: 40px;
+}
+
+.cartImage > * {
+    display: block;
+}
+
+.cartDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartHeader h1 {
+    margin: 0px;
+    color: white;
+}
+
+.icon{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+.cartFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cartFooter span{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.cartButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    width: 150px; /* or adjust as needed */
+}
+  
+.cartButton button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+.cartButton button:hover {
+    transform: scale(2);
+}
+  
+.cartButton span {
+    font-size: 22px;
+    color: white;
+}
+
+.subTotal {
+    margin: 40px 0px;
+    text-align: right;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.continueButton {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.checkOutButton {
+    color: white;
+    background-color: rgba(112, 144, 139, 1);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border-radius: 40px;
+    padding: 15px 65px;
+    border: none;
+}

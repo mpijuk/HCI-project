@@ -5,18 +5,8 @@ import CartContext from "./CartContext";
 
 const DishCard = ({ dish }) => {
 
-    const { setCartCount, addedItems, addDish, removeDish } = useContext(CartContext);
-    const isAdded = addedItems[dish.id];
-
-    const handleClickAdd = () => {
-        setCartCount(prevCount => prevCount + 1);
-        setIsClicked(prevClick => !prevClick);
-    }
-
-    const handleClickRemove = () => {
-        setCartCount(prevCount => prevCount - 1);
-        setIsClicked(prevClick => !prevClick);
-    }
+    const { cartItems, addToCart, removeFromCart } = useContext(CartContext);
+    const isAdded = cartItems[dish.id];
 
     return(
         <div className={styles.dishCard}>
@@ -47,10 +37,10 @@ const DishCard = ({ dish }) => {
                     <p style={{fontWeight: "bold", margin: "0px"}}>{dish.description}</p>
                 </div>
                 <div className={styles.dishFooter}>
-                    <span className={styles.dishPrice}>{dish.price}$</span>
-                    { isAdded ? 
-                      <button className={styles.addToCart} onClick={() => removeDish(dish.id)}>Remove</button> :
-                      <button className={styles.addToCart} onClick={() => addDish(dish.id)}>Add to Cart</button>
+                    <span className={styles.dishPrice}>${dish.price}</span>
+                    { isAdded ?
+                      <button className={styles.addToCart} onClick={() => removeFromCart(dish.id)}>Remove</button> :
+                      <button className={styles.addToCart} onClick={() => addToCart(dish)}>Add to Cart</button>
                     }    
                 </div>
             </div>
