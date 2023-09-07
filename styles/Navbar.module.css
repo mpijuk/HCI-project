@@ -26,3 +26,34 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+.navIcons {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navTabs {
+        display: none;
+    }
+
+    .navIcons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .linkIcon {
+        display: flex;
+        height: 100%;
+    }
+
+    .linkIcon > * {
+        width: 35px;
+        height: auto;
+        cursor: pointer;
+        color: white;
+        transition: transform 0.3s ease;
+    }
+    .linkIcon > *:hover {
+        transform: scale(1.2);
+    }
+}

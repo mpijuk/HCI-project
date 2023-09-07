@@ -12,7 +12,7 @@ const BlogPost = ({ post }) => {
                   alt={post.title}  
                   width={400} 
                   height={400}
-                  style={{objectFit: "cover", borderStyle: "groove", borderColor: "white"}} 
+                  style={{objectFit: "cover", borderStyle: "solid", borderColor: "white"}} 
                   priority={true}
                   className={styles.image}
                 />

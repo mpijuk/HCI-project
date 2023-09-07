@@ -10,10 +10,11 @@
     z-index: 10;
 }
 
-.logo {
+.logo > *{
     width: 50px;
     height: auto;
     color: white;
+    margin-right: 20px;
 }
 
 .navTabIcons {
@@ -51,4 +52,16 @@
     font-weight: bold;
     color: rgb(209, 38, 38);
     transform: translate(50%, -50%);
+}
+
+
+@media screen and (max-width: 450px) {
+   .logo {
+    display: none;
+   }
+
+   .navTabIcons {
+        justify-content: center;
+        width: 100%;
+   }
 }

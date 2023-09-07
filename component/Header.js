@@ -11,8 +11,8 @@ const Header = () => {
 
     return(
         <div className={styles.header}>
-            <Link href="/" passHref>
-                <PiCookingPot className={styles.logo}/>
+            <Link href="/" passHref className={styles.logo}>
+                <PiCookingPot />
             </Link>
             <div className={styles.navTabIcons}>
                 <Navbar />

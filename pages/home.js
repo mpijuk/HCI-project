@@ -34,7 +34,7 @@ const Home = () => {
     return (
         <div>
             <div className={styles.homepageImageContainer} >
-                <Image src={homePageImg} alt="" style={{objectFit:"cover"}} fill={true} priority={true}/>
+                <Image src={homePageImg} alt={homePageImg} style={{objectFit:"cover"}} priority={true}/>
                 <div className={styles.overlayText}>
                     <p className={styles.text}>Made by Croatians.</p>
                     <p className={styles.text}>Enjoyed by Everyone.</p>

@@ -1,7 +1,8 @@
 .commentSection {
     display: flex;
     justify-content: space-between;
-    padding: 0px 40px;
+    align-items: center;
+    padding: 0px 50px;
 }
 
 .commentContainer{
@@ -10,8 +11,19 @@
     align-items: center;
     justify-content: space-around;
     background-color: white;
-    width: 400px;
+    width: 30%;
+    height: 300px;
     padding: 10px 20px;
     border-radius: 20px;
 }
 
+@media (max-width: 700px) {
+    .commentSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .commentContainer {
+        width: 300px;
+    }
+}

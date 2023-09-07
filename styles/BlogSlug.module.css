@@ -12,7 +12,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    border-bottom: groove;
+    border-bottom: solid white;
     border-color: white;
 }
 
@@ -30,8 +30,8 @@
     font-size: 22px;
 }
 
-@media (max-width: 600px) {
-    .BlogSlugContainer {
+@media (max-width: 800px) {
+    .blogSlugContainer {
         padding: 0px 50px;
     }
 
