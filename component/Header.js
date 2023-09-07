@@ -1,6 +1,6 @@
 import styles from "../styles/Header.module.css";
 import {PiShoppingCartLight, PiCookingPot} from "react-icons/pi";
-import {GoPerson} from "react-icons/Go";
+import {GoPerson} from "react-icons/goo";
 import Navbar from "./Navbar";
 import Link from "next/link";
 import { useContext } from "react";
